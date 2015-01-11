@@ -35,18 +35,18 @@ class Student {
     {
         $total = 0;
         foreach( $this->grades as $value )
-            $total += value;
+            $total += $value;
         
-        return total / count($this->grades);
+        return $total / count($this->grades);
     }
     
     function __toString()
     {
         $result  = $this->first_name . ' ' . $this->surname;
         $result .= ' (' . $this->average() . ')' . PHP_EOL;
-        foreach( $this->emails as which_email=>$what_email )
+        foreach($this->emails as $which_email=>$address)
         {
-            $result .= $which_email . ': ' . $what_email . PHP_EOL;
+            $result .= $which_email . ': ' . $address . PHP_EOL;
         }
         
                 
